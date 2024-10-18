@@ -1,4 +1,4 @@
-# Priconne Shiritori Helper <BR>
+# Priconne Shiritori Manager <BR>
 ![녹화_2024_10_14_11_14_28_183 mp4_snapshot_01 25 410](https://github.com/user-attachments/assets/b7237767-8d9e-4386-8238-a2e24ff4d072) <BR>
 (🖥 사용 화면) <BR> <BR>
 
@@ -8,7 +8,7 @@
 선택한 서버에 맞게 데이터를 로드하는 것 뿐만 아니라, 서버 전환(* 한국 서버, 일본 서버 데이터) 및 진행 상태 기록까지 할 수 있습니다. <BR>
 選択したサーバーに応じてデータをロードするだけでなく、サーバーの切り替え（*韓国サーバー、日本サーバーデータ）や進行状況の記録も行うことができます。 <BR> <BR>
 
-**🔗 URL: https://izh318.github.io/Priconne_SIRITORI_Manager** <BR> <BR>
+**🔗 URL: https://izh318.github.io/Priconne_SHIRITORI_Manager** <BR> <BR>
 
 **이 프로젝트는 비상업적인 목적으로만 사용 가능합니다.** <BR>
 **このプロジェクトは非商業目的のみで使用可能です。** <BR>
