@@ -97,8 +97,7 @@ const preloadImages = () => {
 
   data.forEach((item, index) => {
     if (index > 0) {
-      const imgId =
-        currentServer === "./KR_DB.csv" ? item[3] : item[2];
+      const imgId = currentServer === "./KR_DB.csv" ? item[3] : item[2];
       loadImage(`./srt_panel_${imgId}.png`);
     }
   });
@@ -460,9 +459,7 @@ const updateResults = () => {
 
   // 현재 선택된 서버에 맞는 historyData 배열 선택
   const currentHistoryData =
-    currentServer === "./KR_DB.csv"
-      ? historyDataKR
-      : historyDataJP;
+    currentServer === "./KR_DB.csv" ? historyDataKR : historyDataJP;
 
   // 저장된 historyData를 사용하여 결과에 하이라이트 적용
   highlightRows(currentHistoryData); // 강조 표시
@@ -578,10 +575,8 @@ const createResultTable = (results) => {
   table += `</tr></thead><tbody>`;
 
   results.forEach((item) => {
-    const imgId =
-      currentServer === "./KR_DB.csv" ? item[3] : item[2];
-    const wordId =
-      currentServer === "./KR_DB.csv" ? item[0] : item[5];
+    const imgId = currentServer === "./KR_DB.csv" ? item[3] : item[2];
+    const wordId = currentServer === "./KR_DB.csv" ? item[0] : item[5];
     const description = item[4];
     const word = item[1];
     let imgSrc;
@@ -603,8 +598,7 @@ const createResultTable = (results) => {
       imgSrc = `./srt_panel_${imgId}.png`;
     }
 
-    const type =
-      currentServer === "./KR_DB.csv" ? item[2] : item[0];
+    const type = currentServer === "./KR_DB.csv" ? item[2] : item[0];
 
     table += `<tr>`;
 
@@ -626,7 +620,7 @@ const createResultTable = (results) => {
       table += `<td class="center">
       <img src="${imagesCache[imgSrc]?.src || ""}" alt="${word}" data-index="${
         item.row
-      }" onclick="addWordToInput('${word}'), addToHistory(${item.row}, 'KR')">
+      }" onclick="addWordToInput('${word}')">
     </td>`;
     if (showOptions.word) table += `<td class="center">${word}</td>`;
     if (showOptions.description) table += `<td>${description}</td>`;
